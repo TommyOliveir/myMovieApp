@@ -1,7 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,22 +24,30 @@
 
 		</header>
 		<main>
-			<div class="margin-auto">
+			<div class="form-container">
 				<div class="search-form">
+					<i class="fa-solid fa-magnifying-glass f-icon"></i>
 					<label for="site-search"></label>
-					<input type="search" id="mov-search" name="q">
+					<input type="search" id="mov-search-input" name="q" placeholder="Search Movie">
 					<button id="btn-search">Search</button>
 
 				</div>
 			</div>
-            <section id="mov-list">
-                movie list
-            </section>
+			<section id="mov-list">
+
+				<div class="icon-film"><i class="fa-solid fa-film"></i>
+
+				</div>
+				<p>Start exploring</p>
+
+			</section>
 
 
 		</main>
 	</div>
-	<!--container -->
+	<!--container end-->
+
+	<!-- script -->
 	<script src="index.js"></script>
 </body>
 

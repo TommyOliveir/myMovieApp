@@ -5,11 +5,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 header {
     background: #000;  
-    padding: 2.5em 0;
+    padding: 3.5em 0;
     color: #fff;
+    letter-spacing: 3px;
    
 }
 header * {
@@ -24,10 +26,11 @@ header * {
 
 #watchlist {
     align-self: center;
+    font-weight: 300;
 }
 
 .container {
-    border: 3px solid rgb(21, 197, 53);
+    border: 1px solid rgb(99, 99, 99);
     width: 550px;
     margin: 0 auto;
     height: 100vh;
@@ -42,9 +45,9 @@ main {
     height: 400px;
 
 }
-.margin-auto {
+.form-container{
     margin: auto;
-    background: rgb(85, 22, 211);
+  
     align-content: center;
    display: flex;
    position: relative;
@@ -53,21 +56,30 @@ main {
 
 .search-form {
     border: 1px solid #000;
-    display:inline-block;  
-    margin: auto;
+    display:flex;  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background: #FFFFFF;
-    height: 1.5em;
+    height: 2.5em;
     position: absolute;
-    top: -10px;
-    left: 25%;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    width: 80%;
 
 }
 
-#mov-search {
-     margin: 0;
-    padding: 0 .3em;
+#mov-search-input {
+    width: 100%;
+     margin: 2px auto;
+     padding: 0 .5em;
      border: none;
      outline: none;
+     font-weight: 300;
+    
 }
 
 #btn-search {
@@ -80,10 +92,43 @@ main {
     border-width: 1px;
     padding: 0 1em;
      height: 100%;
-      
+     background-color: rgb(254, 251, 251);
+     cursor: pointer;
+     color:rgb(0, 0, 0);
+     font-weight: 400;
+     width: 150px;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+    
+}
+#btn-search:hover {
+  
+    color: rgb(16, 173, 27);
+   
 }
 
 #mov-list {
-    border: solid 1px red;
-    padding: 2em 1em;
+    /* border: solid 1px red; */
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.f-icon{
+color: #000;
+align-self: center;
+padding-left:.5em;
+}
+
+.icon-film {
+font-size: 6em;
+color: rgb(0, 0, 0, 0.3);
+padding-top: 1.5em;
+}
+
+.movie-title {
+    padding: 4em 1em 1em;
 }

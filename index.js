@@ -1,5 +1,5 @@
 const movieList = document.getElementById("mov-list")
-const inputVal = document.getElementById('mov-search')
+const inputVal = document.getElementById('mov-search-input')
 const searchBtn = document.getElementById('btn-search')
 
 
@@ -12,7 +12,7 @@ async function getResponse(title) {
 	console.log(data)
 	// const list = `${data.Title} <div>Actors: ${data.Actors}</div>  <img src=${data.Poster}" alt="poster"> `
 	const list = ` ${data.Search.map(item => {
-		return  `<div>${item.Title}</div> <img src=${item.Poster}" alt="poster">`
+		return  `<div class="movie-title">${item.Title}</div> <img src=${item.Poster}" alt="poster">`
 	}).join("")} `
 	
 	movieList.innerHTML = list
